@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+                                                            /* BODY */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+                                                            /* HOME INDEX */
+header.indexHeader {
+    background-image: linear-gradient(100deg,
+    rgb(255, 255, 255), rgba(0,0,0,0.1)), 
+    url(../assets/images/banner2.jpg);
+    text-transform: uppercase;
+    background-position: center;
+    color: #020202;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 800;
+}
+
+.textoPaginas.hom{
+    color: #868686;
+}
+
+.navbar {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 400px;
+    grid-template-areas: 
+    "nav"
+    "banner";
+    align-items: center;
+    height: 600px;
+}
+
+.navegacion {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+    grid-template-areas: 
+    "logo espacio navegacion";
+    align-items: center;
+    background-image: linear-gradient(100deg,
+    rgb(255, 255, 255), rgba(231, 231, 231, 0.1))
+}
+
+.imgConteinerLogo {
+    grid-area: logo;
+    justify-self: center;
+}
+.navPaginas{
+    grid-area: navegacion;
+    justify-content: space-evenly;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.textoPaginas {
+    text-decoration: none;
+    text-transform: none;
+    font-weight: bold;
+    color: #272727;
+}
+.textoPaginas:hover {
+    opacity: 0.5;
+}
+
+
+.paginas{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+div.imgConteinerLogo {
+    width: 150px;
+    }
+    header div img.logo {
+        width: 100%;
+    }
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+                            /* MAIN INDEX */
+
+main{
+    margin: 20px;
+}
+.mainIndex{
+    display: flex;
+    justify-content: center;
+}
+
+.mainConteinerIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.imagen3{
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.imagen1{
+    height: 1fr;
+    }
+    div img.gif {
+        width: 100%;
+    }
+
+.concept {
+    grid-area: img3;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    padding: 100px;
+}
+
+                               /* FOOTER */
+
+footer {
+    margin: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid rgb(218, 218, 218);
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+    "redes"
+    "derechos";
+    align-content: space-around;
+}
+
+.buttonSocial{
+    grid-area: redes;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+p.derechos{
+    grid-area: derechos;
+    color: #9b9b9b;
+}
+
+
+                                /* SERVICIOS */
+
+header.ServiciosHeader {
+    background-image: 
+    url(../assets/images/bannerservicios.jpg);
+    width: 100%;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+}
+
+.textoPaginas.ser{
+    color: #ffffff;
+}
+.mainConteinerSer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "zona1"
+    "zona2";
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.descripServicios {
+    grid-area: zona1;
+}
+
+.conteinerImgServicios {
+    grid-area: zona2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+
+
+                                /* NOSOTRAS */
+
+header.headerNos {
+    background-image: 
+    url(../assets/images/office2.jpg);
+    width: 100%;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+}
+
+.textoPaginas.nos{
+    color: #ffffff;
+}
+
+.mainConteinerNos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "nos1"
+    "nos2";
+}
+
+                                /* PORTFOLIO */                                                               
+
+header.headerPort {
+    background-image: 
+    url(../assets/images/banner\ portfolio.jpg);
+    width: 100%;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+}
+
+.textoPaginas.por{
+    color: #ffffff;
+}
+
+
+div.conteinerImgPort {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "tp1 tp2"
+    "tp3 tp4";
+    gap: 10px;
+    margin: 10px;
+}
+
+.imgPorta{
+    transition: all 0.3s;
+}
+.imgPorta:hover{
+    transform: scale(1.02);
+}
+.imgPorta {
+    filter: grayscale(100%);
+}
+
+.imgPorta:hover {
+    filter: grayscale(0%);
+}
+.imgPorta {
+    width: 100%;
+}
+
+
+                                        /* CONTACTO */
+
+header.headerCont {
+    background-image: 
+    url(../assets/images/banner\ contacto.jpg);
+    width: 100%;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+}
+
+.textoPaginas.con{
+    color: #ffffff;
+}
+.contenido-Banner{
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 5%;
+    width: 50%;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+input,
+textarea {
+    font-family: 'Roboto';
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+::placeholder {
+    font-family: 'Roboto';
+    font-size: 15px;
+}
+
+.boton-Formulario {
+    background-color: #9b9b9b;
+    color: #ffff;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 300px;
+    display: inline-block;
+    justify-content: center;
+}
+
+.mainConteinerCont {
+    margin: 20px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "titulo"
+    "titulo2"
+    "formulario";
+    justify-items: center;
+    align-items: center;
+}
+
+                                            /*MEDIA QUERIES*/
+
+@media (max-width: 425px) {
+    .navbar {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "nav"
+        "banner";
+        align-items: center;
+    }
+    .navegacion {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+        "logo navegacion";
+        align-items: center;
+        background-image: linear-gradient(100deg,
+        rgb(255, 255, 255), rgba(231, 231, 231, 0.1))
+    }
+    
+    .paginas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: space-evenly;
+    }
+    .mainConteinerIndex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "1"
+        "2"
+        "3"
+        "4";
+        justify-items: center;
+        align-items: center;
+    }
+    .imagen3{
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 20px;
+        padding: 30px;
+    }
+    .textoUno {
+        padding: 50px;
+    }
+
+    div.conteinerImgPort {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "tp1"
+        "tp2"
+        "tp3"
+        "tp4";
+        gap: 10px;
+        margin: 10px;
+    }
+
+.boton-Formulario{
+    width: 200px;
+}
+}
