@@ -185,13 +185,14 @@ header.ServiciosHeader {
 .mainConteinerSer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 5fr;
     grid-template-areas: 
     "zona1"
     "zona2";
     padding: 10px;
     align-items: center;
     justify-items: center;
+    font-size: 30px;
 }
 
 
@@ -203,7 +204,16 @@ header.ServiciosHeader {
     grid-area: zona2;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
     align-items: center;
+    justify-items: center;
+    font-weight: 800;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.imgSer {
+    width: 800px;
 }
 
 
@@ -400,6 +410,21 @@ textarea {
         justify-items: center;
         align-items: center;
     }
+
+    footer {
+        margin: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: 1px solid rgb(218, 218, 218);
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "redes"
+        "derechos";
+        align-content: space-around;
+    }
+
     .imagen3{
         font-weight: bold;
         font-style: oblique;
@@ -426,4 +451,40 @@ textarea {
 .boton-Formulario{
     width: 200px;
 }
+
+.mainConteinerSer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    "zona1"
+    "zona2";
+    font-size: 15px;
+}
+.conteinerImgServicios {
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+.imgSer {
+    width: 300px;
+}
+.conteinerImgServicios {
+    font-size: 20px;
+    gap: 10px;
+}
+}
+
+@media (max-width: 1024px) {
+    .mainConteinerSer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 6fr;
+        grid-template-areas: 
+        "zona1"
+        "zona2";
+        font-size: 15px;
+    }
+    .imgSer {
+        width: 500px;
+    }
 }

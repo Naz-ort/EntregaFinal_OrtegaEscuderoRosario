@@ -1,0 +1,151 @@
+/*MEDIA QUERIES*/
+
+@media (max-width: 425px) {
+    .navbar {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "nav"
+        "banner";
+        align-items: center;
+    }
+    .navegacion {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+        "logo navegacion";
+        align-items: center;
+        background-image: linear-gradient(100deg,
+        rgb(255, 255, 255), rgba(231, 231, 231, 0.1))
+    }
+    
+    .paginas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: space-evenly;
+    }
+    .mainConteinerIndex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "1"
+        "2"
+        "3"
+        "4";
+        justify-items: center;
+        align-items: center;
+    }
+
+    footer {
+        margin: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: 1px solid rgb(218, 218, 218);
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "redes"
+        "derechos";
+        align-content: space-around;
+    }
+
+    .imagen3{
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 20px;
+        padding: 30px;
+    }
+    .textoUno {
+        padding: 50px;
+    }
+
+    div.conteinerImgPort {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "tp1"
+        "tp2"
+        "tp3"
+        "tp4";
+        gap: 10px;
+        margin: 10px;
+    }
+
+.boton-Formulario{
+    width: 200px;
+}
+
+.mainConteinerSer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    "zona1"
+    "zona2";
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    font-size: 5px;
+}
+.conteinerImgServicios {
+    grid-area: zona2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+    grid-template-areas: 
+    "s1"
+    "se1"
+    "s2"
+    "se2"
+    "s3"
+    "se3"
+    "s4"
+    "se4";
+    gap: 30px;
+    width: 250px;
+}
+.imagConteinerServi {
+    width: 250px;
+    }
+
+.conteinerImgServicios {
+    font-size: 20px;
+    gap: 10px;
+}
+
+.conteinerImgNoso {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5fr 1fr 5fr 1fr 5fr 1fr;
+        grid-template-areas: 
+        "s1"
+        "se1"
+        "s2"
+        "se2"
+        "s3"
+        "se3";
+        gap: 30px;
+        width: 250px;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .mainConteinerSer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 6fr;
+        grid-template-areas: 
+        "zona1"
+        "zona2";
+        gap: 20px;
+        font-size: 15px;
+    }
+}

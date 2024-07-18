@@ -1,0 +1,37 @@
+/* PORTFOLIO */
+
+header.headerPort {
+    background-image: url(../assets/images/banner\ portfolio.jpg);
+    width: 100%;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $color-blanco;
+    text-align: center;
+    font-style: italic;
+}
+
+.textoPaginas.por {
+    color: $color-blanco;
+}
+
+div.conteinerImgPort {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "tp1 tp2" "tp3 tp4";
+    gap: 10px;
+    margin: 10px;
+}
+
+.imgPorta {
+    transition: all 0.3s;
+    filter: grayscale(100%);
+    width: 100%;
+
+    &:hover {
+        transform: scale(1.02);
+        filter: grayscale(0%);
+    }
+}

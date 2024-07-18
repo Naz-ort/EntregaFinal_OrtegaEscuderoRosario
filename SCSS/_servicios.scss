@@ -1,0 +1,48 @@
+/* SERVICIOS */
+
+header.ServiciosHeader {
+    background-image: url(../assets/images/bannerservicios.jpg);
+    width: 100%;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $color-blanco;
+    text-align: center;
+    font-style: italic;
+}
+
+.mainConteinerSer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoPaginas.ser {
+    color: $color-blanco;
+}
+
+.imagConteinerServi {
+width: 400px;
+}
+
+.imgSer {
+    width: 100%;
+}
+
+.conteinerImgServicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "t1 t2"
+    "t3 t4";
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    font-weight: 800;
+    font-size: 40px;
+    font-style: italic;
+    width: 100vh;
+}
+
