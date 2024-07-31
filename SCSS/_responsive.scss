@@ -24,7 +24,8 @@
     .paginas{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        padding: 1em;
         justify-content: space-evenly;
     }
     .mainConteinerIndex {
@@ -136,7 +137,6 @@
     }
 }
 
-
 @media (max-width: 1024px) {
     .mainConteinerSer {
         display: grid;
@@ -146,6 +146,5 @@
         "zona1"
         "zona2";
         gap: 20px;
-        font-size: 15px;
+        font-size: 15px;}
     }
-}
